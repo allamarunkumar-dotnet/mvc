@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <table border="1" width="1300px" height="600px">
+        <tr>
+            <td colspan="2" align="center" height="100px" style="background-color:yellow"><font size="6" color="blue">Ojas Innovative Technologies Pvt.Ltd</font></td>
+        </tr>
+        <tr>
+            <td width="150" height="400">@Html.ActionLink("Register","Index")<Br />@Html.ActionLink("SingIn","Login")  </td><td align="center">@RenderBody()</td>
+        </tr>
+        <tr>
+            <td colspan="2" height="100px" style="background-color:forestgreen;text-align:center;color:red"> CopyRights Reserved &copy; Ojas</td>
+        </tr>
+    </table>
+</body>
+</html>
